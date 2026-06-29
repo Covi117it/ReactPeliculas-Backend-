@@ -1,9 +1,10 @@
-﻿using PeliculasAPI.Validaciones;
+﻿using PeliculasApi.Entidades;
+using PeliculasAPI.Validaciones;
 using System.ComponentModel.DataAnnotations;
 
 namespace PeliculasAPI.Entidades
 {
-    public class Genero
+    public class Genero: IId
     {
         public int Id { get; set; }
         [Required(ErrorMessage = "El campo {0} es requerido")]
